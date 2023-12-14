@@ -2,8 +2,7 @@
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 0;
 }
@@ -61,8 +60,7 @@ dd {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
   border-top-width: 1px;
@@ -87,8 +85,7 @@ a {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -137,8 +134,7 @@ optgroup,
 select,
 textarea {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -251,3 +247,26 @@ th {
   text-align: left;
   font-weight: 700;
 }
+
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+.l-header .l-header__inner-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.c-button {
+  border: 3px solid #000;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+}
+.c-button.c-button--fill {
+  background-color: #000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
